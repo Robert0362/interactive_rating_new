@@ -7,6 +7,101 @@
     --VeryDarkBlue: hsl(216, 12%, 8%);
 }
 
-*{
-    font-family: 15px;
+body{
+    font-size: 15px;
+    font-family: Overpass;
+    background-color: var(--VeryDarkBlue);
+    justify-content: center;
+    display: flex;
+    padding: 10rem;
+    color: var(--White);
+}
+.card{
+    background-color: var(--DarkBlue);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.top__star{
+    background-color: var(--MediumGrey);
+    border-radius: 50%;
+    display: inline-block;
+    padding: .25rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.star{
+    margin: .25rem;
+    margin-top: .65rem;
+    padding: 0.25rem;
+}
+
+.title{
+    font-size:24px;
+    font-weight: 700;
+    margin: .75rem 0rem;
+}
+
+.card__rate__text{
+    margin: .75rem 0rem;
+}
+
+.rating__circles{
+    margin: .75rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.number{
+    background-color: var(--MediumGrey);
+    border-radius: 50%;
+    padding:1rem;
+    margin:.5rem;
+}
+
+.button{
+    margin: .75rem 0rem;
+    text-align: center;
+}
+
+button{
+    background-color: var(--Orange);
+    border-radius: 1.25rem;
+    padding: .5rem 8rem;
+    color: var(--White);
+    font-size: large;
+    font-weight: 700;
+}
+
+.thank_you{
+    padding:1rem;
+    text-align: center;
+}
+
+.thank__img{
+    text-align: center;
+    margin: 1rem;
+}
+
+.rate__select{
+    text-align: center;
+    border-radius: 1.25rem;
+    background-color: var(--MediumGrey);
+    margin: 0rem 5rem;
+    padding: .25rem;
+}
+
+.thank__title{
+    text-align: center;
+    margin:1rem 0rem;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.thank__text{
+    text-align: center;
+    margin: 1rem;
 }
