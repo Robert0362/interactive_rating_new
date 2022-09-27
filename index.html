@@ -16,7 +16,9 @@
     <!-- Rating state start -->
     <div class="rate__card" style="display:block">
       <div class="top__star">
-        <img src="images/icon-star.svg" alt="" class="star">
+        <div class="star__grid">
+          <img src="images/icon-star.svg" alt="" class="star">
+        </div>
       </div>
       <div class="title">
         How did we do?
@@ -43,12 +45,14 @@
         </a> 
       </div>
       <div class="button">
-        <button type="submit">SUBMIT</button>
+        <a>
+          <button type="submit" id="submit">SUBMIT</button>
+        </a>
       </div>
     </div>
     <!-- Rating state end -->
     <!-- Thank you state start -->
-    <div class="thank__you" style="display:">
+    <div class="thank__you" style="display:none">
       <div class="thank__img">
         <img src="images/illustration-thank-you.svg" alt="" class="image">
       </div>  
@@ -65,5 +69,6 @@
     </div>
     <!-- Thank you state end -->
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

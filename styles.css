@@ -2,7 +2,7 @@
     --Orange: hsl(25, 97%, 53%);
     --White: hsl(0, 0%, 100%);
     --LightGrey: hsl(217, 12%, 63%);
-    --MediumGrey: hsl(216, 12%, 54%);
+    --MediumGrey: hsl(220, 4%, 29%);
     --DarkBlue: hsl(213, 19%, 18%);
     --VeryDarkBlue: hsl(216, 12%, 8%);
 }
@@ -23,12 +23,18 @@ body{
 }
 
 .top__star{
+    margin: .75rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.star__grid{
     background-color: var(--MediumGrey);
     border-radius: 50%;
-    display: inline-block;
-    padding: .25rem;
-    text-align: center;
-    margin: .5rem;
+    padding:.5rem;
+    margin:.5rem;
 }
 
 .star{
@@ -48,7 +54,7 @@ body{
 }
 
 .rating__circles{
-    margin: .75rem 0rem;
+    margin: 1.5rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -62,41 +68,56 @@ body{
     margin:.5rem;
 }
 
+.number:hover{
+    background-color: var(--Orange);
+}
+
+.number:active{
+    background-color: var(--LightGrey);
+}
+
 .button{
-    margin: .75rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
     text-align: center;
 }
 
 button{
     background-color: var(--Orange);
-    border-radius: 1.25rem;
-    padding: .5rem 8rem;
+    border-radius: 1.75rem;
+    padding: 1rem 9rem;
     color: var(--White);
     font-size: large;
     font-weight: 700;
+    border:0px;
+}
+
+button:hover{
+    background-color: var(--White);
+    color:var(--Orange);
 }
 
 .thank_you{
-    padding:1rem;
+    padding:.5rem;
     text-align: center;
 }
 
 .thank__img{
     text-align: center;
-    margin: 1rem;
+    margin: 1rem 0rem;
 }
 
 .rate__select{
     text-align: center;
     border-radius: 1.25rem;
     background-color: var(--MediumGrey);
-    margin: 0rem 5rem;
-    padding: .25rem;
+    margin: .5rem 4rem 2rem 4rem;
+    padding: .5rem 0rem;
+    color:var(--Orange)
 }
 
 .thank__title{
     text-align: center;
-    margin:1rem 0rem;
+    margin:1rem 0rem 2rem 0rem;
     font-size: 24px;
     font-weight: 700;
 }
@@ -104,4 +125,36 @@ button{
 .thank__text{
     text-align: center;
     margin: 1rem;
+}
+
+@media screen and (min-width:900px){
+    .card{
+        width:35%;
+        margin-top: 5rem;
+    }
+    button{
+        padding: 1rem 10rem;
+    }
+    .rating__circles{
+        margin:.25rem 2rem;
+        padding:0rem 3rem;
+    }
+    .rate_select{
+        margin: .5rem 2rem 2rem 2rem;
+    }
+    .star__grid{
+        background-color: var(--MediumGrey);
+        border-radius: 50%;
+        padding:0rem;
+        margin:2rem;
+    }
+    .card__rate__text{
+        margin: .75rem 2rem;
+    }
+    .title{
+        font-size:24px;
+        font-weight: 700;
+        margin: .75rem 2rem;
+    }
+    
 }
